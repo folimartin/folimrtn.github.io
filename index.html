@@ -192,5 +192,20 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="./js/float-panel.js"></script>
 		<script src="./js/main.js"></script>
+		<script>
+			// hero sliding blinking problem solved
+		var images = new Array()
+		function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+		images[i] = new Image()
+		images[i].src = preload.arguments[i]
+		}
+		}
+		preload(
+		"../img/profile/me.jpg",
+		"../img/profile/me1.jpg",
+		"../img/profile/me3.jpg"
+		)
+		</script>
 	</body>
 </html>
